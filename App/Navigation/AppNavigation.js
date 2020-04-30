@@ -1,19 +1,48 @@
 import { createAppContainer } from 'react-navigation'
 import { createStackNavigator } from 'react-navigation-stack';
-import LaunchScreen from '../Containers/LaunchScreen'
+import BottomNavigation from './BottomNavigation'
 
 import styles from './Styles/NavigationStyles'
 
+// Home
+import HomeScreen from '../Containers/HomeScreen'
+
+// Explore
+import ExploreScreen from '../Containers/ExploreScreen'
+
+// Notif
+import NotifScreen from '../Containers/NotifScreen'
+
+// Profile
+import ProfileScreen from '../Containers/ProfileScreen'
+
 // Manifest of possible screens
-const PrimaryNav = createStackNavigator({
-  LaunchScreen: { screen: LaunchScreen }
+const AppStack = createStackNavigator({
+  MainScreen: {
+    screen: BottomNavigation,
+    navigationOptions: ({ navigation }) => ({
+      headerShown: false
+    })
+  },
+
+  // Home Stack
+  Home: { screen: HomeScreen },
+
+  // Explore Stack
+  Explore: { screen: ExploreScreen },
+
+  // Notif Stack
+  Notif: { screen: NotifScreen },
+
+  // Profile
+  Profile: { screen: ProfileScreen }
 }, {
   // Default config for all screens
   headerMode: 'none',
-  initialRouteName: 'LaunchScreen',
+  initialRouteName: 'MainScreen',
   navigationOptions: {
     headerStyle: styles.header
   }
 })
 
-export default createAppContainer(PrimaryNav)
+export default createAppContainer(AppStack)
