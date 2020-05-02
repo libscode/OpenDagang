@@ -1,8 +1,9 @@
 const formatData = (data, numColumns) => {
-  const numberOfFullRows = Math.floor(data.length / numColumns);
-  let newArr = []
+  let newArr = data
 
-  let numberOfElementsLastRow = data.length - numberOfFullRows * numColumns;
+  const numberOfFullRows = Math.floor(newArr.length / numColumns);
+
+  let numberOfElementsLastRow = newArr.length - numberOfFullRows * numColumns;
   while (
     numberOfElementsLastRow !== numColumns &&
     numberOfElementsLastRow !== 0
