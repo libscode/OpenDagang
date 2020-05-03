@@ -14,8 +14,8 @@ const featuredProduct = props => {
     <View style={styles.productWrapper}>
       <Image source={item.thumb} style={styles.productThumb} />
 
-      <View style={apply('flex wrap')}>
-        <Text style={[styles.productName, !item.promo && apply('mb-4')]}>{item.name}</Text>
+      <View style={apply('flex wrap justify-between')}>
+        <Text style={styles.productName}>{item.name}</Text>
         {item.promo && <Text style={styles.productPromo}>{item.promo}</Text>}
         <Text style={styles.productPrice}>{item.price}</Text>
       </View>

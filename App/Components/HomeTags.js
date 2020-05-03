@@ -10,15 +10,17 @@ import { apply } from '../Themes/OsmiCSX'
 const homeTags = props => {
   const { extraData, data } = props
 
-  console.tron.log('==== menus ====', data)
-
   const _renderItem = ({ item, index }) => {
     return item?.empty ? (
       <View style={apply('flex')} />
     ) : (
       <TouchableOpacity
       activeOpacity={0.8}
-      style={styles.btnWrapper}>
+      style={styles.btnWrapper}
+      onPress={() => item.id === 8 ?
+        NavigationServices.navigate('Category', { selectedTag: data }) :
+        alert('clicked!')
+      }>
         <View style={styles.boxed}>
           {item.icon}
         </View>

@@ -6,6 +6,7 @@ import styles from './Styles/NavigationStyles'
 
 // Home
 import HomeScreen from '../Containers/HomeScreen'
+import CategoryScreen from '../Containers/CategoryScreen'
 
 // Explore
 import ExploreScreen from '../Containers/ExploreScreen'
@@ -27,6 +28,7 @@ const AppStack = createStackNavigator({
 
   // Home Stack
   Home: { screen: HomeScreen },
+  Category: { screen: CategoryScreen },
 
   // Explore Stack
   Explore: { screen: ExploreScreen },

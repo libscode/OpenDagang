@@ -42,11 +42,26 @@ export default {
   'border-soft-primary': { borderColor: '#D8E0EF' },
   'border-border': { borderColor: '#9E9E9E' },
 
+  // border radius
+  'rounded-xl': { borderradius: 10 },
+  'rounded-2xl': { borderRadius: 15 },
+  'rounded-3xl': { borderRadius: 20 },
+  'rounded-4xl': { borderRadius: 30 },
+
   // width & height
   'min-w-146': { minWidth: 146 },
+  'min-h-64': { minHeight: 64 },
   'h-210': { height: 210 },
   'w-31': { width: 31 },
   'h-31': { height: 31 },
   'w-70': { width: 70 },
-  'h-70': { height: 70 }
+  'h-70': { height: 70 },
+
+  // top right bottom left
+  '-top-2': { top: -2 },
+  '-top-3': { top: -5 },
+  'right-5': { right: 15 },
+  'right-6': { right: 20 },
+  'right-7': { right: 30 },
+  'right-8': { right: 33 }
 }

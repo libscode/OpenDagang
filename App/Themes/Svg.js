@@ -21,6 +21,11 @@ import TagCheapestSvg from '../Images/tag-cheapest.svg'
 import TagFreeShippingSvg from '../Images/tag-free-shipping.svg'
 import TagFlashSaleSvg from '../Images/tag-flashsale.svg'
 import TagMoreSvg from '../Images/tag-more.svg'
+import TagBillSvg from '../Images/tag-bill.svg'
+import TagRewardSvg from '../Images/tag-reward.svg'
+import TagTicketSvg from '../Images/tag-ticket.svg'
+import TagWarantySvg from '../Images/tag-waranty.svg'
+import TagPromoSvg from '../Images/tag-promo.svg'
 export const TagCashback = TagCashbackSvg
 export const TagCOD = TagCODSvg
 export const TagSale = TagSaleSvg
@@ -29,15 +34,24 @@ export const TagCheapest = TagCheapestSvg
 export const TagFreeShipping = TagFreeShippingSvg
 export const TagFlashSale = TagFlashSaleSvg
 export const TagMore = TagMoreSvg
+export const TagBill = TagBillSvg
+export const TagReward = TagRewardSvg
+export const TagTicket = TagTicketSvg
+export const TagWaranty = TagWarantySvg
+export const TagPromo = TagPromoSvg
 
 // Header
 import HeaderChatSvg from '../Images/header-chat.svg'
 import HeaderCartSvg from '../Images/header-cart.svg'
+import IconBackSvg from '../Images/icon-back.svg'
 export const HeaderChat = HeaderChatSvg
 export const HeaderCart = HeaderCartSvg
+export const IconBack = IconBackSvg
 
 // Misc
 import IconSeeAllSvg from '../Images/icon-see-all.svg'
 import ProductWishlistSvg from '../Images/product-wishlist.svg'
+import IconCheckSvg from '../Images/icon-check.svg'
 export const IconSeeAll = IconSeeAllSvg
 export const ProductWishlist = ProductWishlistSvg
+export const IconCheck = IconCheckSvg

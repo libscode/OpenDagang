@@ -35,27 +35,35 @@ class HomeScreen extends Component {
 
     this.state = {
       menus: [{
+        id: 1,
         icon: <TagCashback width={30} height={30} />,
         label: 'Cashback'
       }, {
+        id: 2,
         icon: <TagCOD width={30} height={30} />,
         label: 'COD'
       }, {
+        id: 3,
         icon: <TagSale width={30} height={30} />,
         label: 'Sale'
       }, {
+        id: 4,
         icon: <TagVoucher width={30} height={30} />,
         label: 'Voucher'
       }, {
+        id: 5,
         icon: <TagCheapest width={30} height={30} />,
         label: 'Cheapest'
       }, {
+        id: 6,
         icon: <TagFreeShipping width={30} height={30} />,
         label: 'Free Shipping'
       }, {
+        id: 7,
         icon: <TagFlashSale width={30} height={30} />,
         label: 'Flash Sale'
       }, {
+        id: 8,
         icon: <TagMore width={30} height={30} />,
         label: 'More'
       }],
