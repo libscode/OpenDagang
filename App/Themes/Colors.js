@@ -21,7 +21,15 @@ const colors = {
   eggplant: '#251a34',
   border: '#483F53',
   banner: '#5F3E63',
-  text: '#E0D7E5'
+  text: '#E0D7E5',
+  grayMedium: '#F1F1F1',
+  grayTransparant: '#FAFAFC',
+  greenProgress: '#59ad24',
+  blackProgress: '#353535',
+  blueProgress: '#00AAE8',
+  blueMetronic: '#0073e9',
+  blueQonstanta: '#57B7DD',
+  blueTheme: '#57B7DD',
 }
 
 export default colors
