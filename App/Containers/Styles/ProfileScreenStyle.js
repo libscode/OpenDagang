@@ -1,5 +1,10 @@
 import { StyleSheet } from 'react-native'
 import { Colors, Metrics } from '../../Themes/'
+import {
+  responsiveWidth,
+  responsiveHeight,
+} from 'react-native-responsive-dimensions';
+
 
 export default StyleSheet.create({
   container: {
@@ -8,7 +13,7 @@ export default StyleSheet.create({
     backgroundColor: '#FFF'
   },
   cardProfile: {
-    height: 180,
+    height: 120,
     width: 300,
     borderBottomLeftRadius: 10,
     borderBottomRightRadius: 10,
@@ -34,5 +39,12 @@ export default StyleSheet.create({
     height: 50,
     resizeMode: 'contain',
     marginTop: 25,
+  },
+  flexCrown: {
+    flexDirection: 'row',
+    paddingHorizontal: responsiveWidth(1.33),
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginRight: responsiveWidth(5.33),
   },
 })
