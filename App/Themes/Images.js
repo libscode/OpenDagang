@@ -5,6 +5,7 @@ const images = {
   featured1: require('../Images/featured1.png'),
   featured2: require('../Images/featured2.png'),
   featured3: require('../Images/featured3.png'),
+  alertNotif: require('../Images/bell.png'),
 }
 
 export default images
