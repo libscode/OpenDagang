@@ -13,6 +13,7 @@ import { Images }           from '../Themes'
 
 // Styles
 import styles from './Styles/NotifScreenStyle'
+import { apply } from '../Themes/OsmiCSX'
 
 class NotifScreen extends Component {
   // constructor (props) {
@@ -42,23 +43,27 @@ class NotifScreen extends Component {
       },
     ]
     return(
-      <View style={styles.cardContainer}> 
+      <View style={apply('items-center')}> 
         <FlatList
           data={data}
           showVerticalScrollIndicator={false}
           renderItem={({item})=>(
             <TouchableOpacity onPress={()=> this.actionDetail()}>
-            <View style={styles.cardNotif}> 
-                <View style={styles.rowContent}>
-                  <View style={styles.columnImage}>
+            <View  
+                width={295} height={90} 
+                style={apply('rounded-b-lg rounded-t-lg bg-white mt-5 pl-7 items-center')}> 
+                <View 
+                  style={apply('row flex')}>
+                  <View 
+                    style={apply('mt-4')}> 
                     <Image
                       source={item.image}
-                      style={styles.imageContent}
+                      style={apply('mt-4 items-stretch'), styles.imageContent}
                     />
                   </View>
-                  <View style={styles.columnContent}>
-                      <Text style={styles.fontTitle}>{item.name}</Text>
-                      <Text style={styles.fontDescription}>{item.description}</Text>
+                  <View style={apply('column ml-6')}>
+                      <Text style={apply('font-semibold text-base mt-2')}>{item.name}</Text>
+                      <Text style={apply('pr-8')}>{item.description}</Text>
                     </View>
                 </View>
               </View>
@@ -72,7 +77,7 @@ class NotifScreen extends Component {
 
   render () {
     return (
-      <SafeAreaView style={styles.container}>
+      <SafeAreaView style={apply('bg-gray-300 flex')}>
         {this.renderCardNotif()}
       </SafeAreaView>
     )
